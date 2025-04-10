@@ -1,3 +1,6 @@
+using System;
+using Humanizer;
+
 namespace GameUnit
 {
     public class Unit
@@ -9,6 +12,11 @@ namespace GameUnit
         {
             this.movement = movement;
             Health = health;
+        }
+        
+        public void Move(int movement)
+        {
+            Console.WriteLine($"This Unit moved {movement.ToRoman()} houses");
         }
     }
 }
