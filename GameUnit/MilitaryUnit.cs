@@ -1,6 +1,6 @@
 namespace GameUnit
 {
-    public class MilitaryUnit : Unit // Heranca
+    public class MilitaryUnit : Unit // Heranca!!
     {
         public int AttackPower { get; }
         public int XP { get; private set; }
