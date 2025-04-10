@@ -14,3 +14,15 @@ classDiagram
         +Name
         #Weapon[]
     }
+
+    class Sword {
+    +float BladeLength
+    +AttackWithSword()
+    }
+
+    class Gun {
+    +int Ammo
+    +FireGun()
+    }
+
+    
