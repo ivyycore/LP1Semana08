@@ -5,8 +5,9 @@ namespace GameUnit
 {
     public class Unit
     {
+        // Values
         private readonly int movement;
-        public int Health { get; set; }
+        public virtual int Health { get; set; }
         public abstract float Cost { get; }
 
         public Unit(int movement, int health)
@@ -15,6 +16,7 @@ namespace GameUnit
             Health = health;
         }
 
+        //Methods
         public void Move(int movement)
         {
             Console.WriteLine($"This Unit moved {movement.ToRoman()} houses");
