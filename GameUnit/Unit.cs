@@ -3,7 +3,7 @@ using Humanizer;
 
 namespace GameUnit
 {
-    public class Unit
+    public abstract class Unit
     {
         // Values
         private readonly int movement;
