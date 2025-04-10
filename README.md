@@ -25,4 +25,9 @@ classDiagram
     +FireGun()
     }
 
-    
+    Character <-- Weapon
+    Weapon: #power
+    Player ..> Character
+    Enemy ..> Character
+    Weapon *-- Sword
+    Weapon *-- Gun
